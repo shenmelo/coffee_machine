@@ -34,10 +34,10 @@ resources = {
 def is_resources_sufficient(order_ingredients):
     for item in order_ingredients:
         if resources[item] >= order_ingredients[item]:
-            return True
-        else:
             print(f"Sorry there's not enough {item}.")
             return False
+    return True
+            
 
 
 def process_coins():
